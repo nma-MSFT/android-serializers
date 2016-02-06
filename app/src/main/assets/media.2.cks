@@ -9,7 +9,7 @@
 		Format = "video/theora"
 		Duration = 18000001
 		Size = 58982401
-		Bitrate = None
+		Bitrate = Set: 262144
 		Persons = ["Bill Gates, Jr.", "Steven Jobs"]
 		Player = Flash
 		Copyright = Set: "2009, Scooby Doo"

@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         try {
 
-            final InputStream testFile = getAssets().open("media.2.cks");
-            final int testFileLength = (int) getAssets().openFd("media.2.cks").getLength();
+            final InputStream testFile = getAssets().open("media.1.cks");
+            final int testFileLength = (int) getAssets().openFd("media.1.cks").getLength();
 
             new AsyncTask<String, Void, Void>() {
                 @Override
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     return null;
                 }
-            }.execute("--dataType=media", "--dataExtra=2", "--dataExtension=cks");
+            }.execute("--dataType=media", "--dataExtra=1", "--dataExtension=cks");
         } catch (IOException e) {
             e.printStackTrace();
         }
